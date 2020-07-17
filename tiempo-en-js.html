@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo en JS</title>
+</head>
+<body>
+    <script>
+        console.log('a')
+        setTimeout( () => console.log('b'), 0)//La función setTimeout se usa para determinar el tiempo en el que se ejecutará una función, recibe 
+                                                //por parámetros dicha función (arrow en este caso) y el tiempo de ejecución en milisegundos
+        console.log('c')
+       // setTimeout( () => console.log('d'), 2000)
+//Si cambiaraomos el delay a 0 segundos, en consola se mostraría a, c, b, en ese orden porque js le está diciendo al nav que ejecute esa función en 0 segundos
+//pero esta será pasada a la cola de tareas (call backs) y lo que hay ahí se ejecutará cuando la pila de ejecución (orden del programa principal)
+//se haya vaciado
+
+//for (var i = 0; i < 100000000000000; i++) {
+    
+}
+
+    </script>
+</body>
+</html>
+
